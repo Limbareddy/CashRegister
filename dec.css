@@ -1,0 +1,72 @@
+
+:root{
+    --primary-color:rgb(9, 205, 91);
+    --secondary-color: white;
+}
+body{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+
+}
+.heading{
+    color: var(--primary-color);
+}
+.description{
+    font-weight: bold;
+    font-size: larger;
+}
+label{
+    font-size: larger;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+
+.btn{
+  
+  border: 10px;
+  border-radius: 12px;
+  color: white;
+  background-color: var(--primary-color);
+  margin: 1rem 0rem ;
+  padding: 1rem 2.5rem;
+  width: 10vw;
+
+}
+.input-label{
+    display: block;
+}
+
+input{
+    display: block;
+     padding: 0.5rem  0rem;
+     width: 20vw;
+     margin: auto;
+     
+
+}
+ table,td ,th  {
+    border: 2px solid rgb(9, 205, 91);
+    border-radius: 10px;
+    border-collapse: collapse;
+    padding: 15px 25px;;
+
+     
+}
+#output{
+    font-size: larger;
+    font-weight:bolder;
+    margin: auto;
+
+}
+.error-message{
+    font-size: medium;
+    font-weight: 900;
+}
+
+
+/* .checking{
+    display: block;
+} */
