@@ -12,8 +12,31 @@ hiding[0].style.display="none";
 hiding[1].style.display="none";
 hiding[2].style.display="none";
 
+Bill.addEventListener("input",()=>{
+    if((Bill.value)>0){
+        message.style.display="none";
+        output.style.display="none";
+    }
+    else{
+        message.style.display="block";
+        output.style.display="none";
+    }
+
+})
+Cashtaken.addEventListener("input",()=>{
+    if((Cashtaken.value)> 0 && Number(Cashtaken.value)<Number(Bill.value)){
+        message.style.display="block";
+        output.style.display="none";
+
+    }
+    else{
+        message.style.display="none";
+        output.style.display="none";
+    }
+})
+
 next.addEventListener("click" ,function hide(){
-     if((Bill.value !=" ") && (Bill.value) >0){
+     if((Bill.value !=" ") && Number(Bill.value) >0){
         next.style.display="none";
        output.style.display="none";
         hiding[0].style.display="block";
